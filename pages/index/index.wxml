@@ -1,13 +1,63 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='header'>
+  <view class='left'>
+   <image src='../../images/header.png' mode='widthFix'></image>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='right'>
+   
+    <text>以太马</text>
   </view>
 </view>
+<!--按钮样式  -->
+<view class='btn'>
+  <button plain="false" class='select'>配对</button>
+  <button plain="false">掘金</button>
+  <button plain="false">我的资产</button> 
+</view>
+
+<!--小马介绍  -->
+<view class='nav' >
+  <!--左边  -->
+  <view class='nav-left'>
+      <image src='../../images/supper.gif'  class='supper'  mode='aspectFill' ></image>
+       <image src='../../images/zuixin.gif' mode='top left' class='zuixin'></image>   
+  </view>
+  <!--右边  -->
+  <view class='nav-right'>
+    <view class='right-top'>
+         <image src='../../images/ma.gif' ></image> 
+        <text class='chaoren'>创世马</text>
+    </view>
+    <view class='footer'>
+        <view> <text class='tex1'>超人马 #17347</text></view>
+        <view> <text class='tex2'>代数: 0代码</text></view>
+        <view> <text class='tex3'>纯度: 100%</text></view>
+        <view><text class='tex4'>生育力: 是</text>   </view>
+    </view>
+  </view>
+
+</view> 
+
+<!--小马介绍2  -->
+<view class='nav'>
+  <!--左边  -->
+  <view class='nav-left'>
+      <image src='../../images/supper1.gif'  class='supper'  mode='aspectFill'></image>
+       <image src='../../images/zuixin.gif' mode='top left' class='zuixin'></image>   
+  </view>
+  <!--右边  -->
+  <view class='nav-right'>
+    <view class='right-top'>
+         <image src='../../images/ma.gif' ></image> 
+        <text class='chaoren'>创世马</text>
+    </view>
+    <view class='footer'>
+        <view> <text class='tex1'>飞天马 #10270</text></view>
+        <view> <text class='tex2'>代数: 0代码</text></view>
+        <view> <text class='tex3'>纯度: 100%</text></view>
+        <view><text class='tex4'>生育力: 否</text>   </view>
+    </view>
+  </view>
+
+</view> 
+
