@@ -1,0 +1,9 @@
+<!--pages/end/end.wxml-->
+<view class='header'>
+  <view>父亲</view>
+  <view class='tu'>
+    <image></image>
+  </view>
+  <view>飞天马 #10270</view>
+  <view>纯度 100%</view>
+</view>

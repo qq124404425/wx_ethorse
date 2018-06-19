@@ -1,0 +1,82 @@
+<!--头部 -->
+
+<!--中间部分  -->
+  <view class='waiyuan'>
+    <view class='nieyuan'> <image src='../../images/77.png'                    mode='aspectFill'></image></view>
+  </view>
+
+<!--介绍部分  -->
+<view class='tetle'>大雕马 #9990</view>
+ <view class='jieshao'>
+      <text class='text2'>代数: 0 代码</text>
+      <text class='text2'>纯度: 100%</text>
+      <text class='text2'>生育力: 是</text>  
+ </view>  
+
+<!--特征  -->
+<view class='tezhneg'>特征</view>
+<view class='xiangxi'>
+  <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+  <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+  <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+    <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+  
+
+</view>
+
+
+<!--提交按钮  -->
+ <button class='peidui' type='warn'>立即配对</button> 
+
+<!-- <view class='jieshao'>
+
+      <text class='text1'>大雕马 #9990</text>
+        <text class='text2'>代数: 0 代码</text>
+        <text class='text2'>纯度: 100%</text>
+        <text class='text2'>生育力: 是</text>  
+   
+</view> -->
