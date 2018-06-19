@@ -1,9 +1,23 @@
 <!--pages/end/end.wxml-->
 <view class='header'>
-  <view>父亲</view>
-  <view class='tu'>
-    <image></image>
+  <view class='left'>
+      <view class='title'>父亲</view>
+     <view class='tu'>
+       <image src='../../images/77.png'></image> 
+      </view>
+      <view class='name'>飞天马 #10270</view>
+      <view class='shuxing'>纯度 100%</view>
   </view>
-  <view>飞天马 #10270</view>
-  <view>纯度 100%</view>
+   <view class='xin'><image src='../../images/xin.png'></image></view> 
+    <view class='left right'>
+      <view class='title'>母亲</view>
+     <view class='tu'>
+       <image src='../../images/feima.png'></image> 
+      </view>
+      <view class='name'>飞天马 #10270</view>
+      <view class='shuxing'>纯度 100%</view>
+  </view>
 </view>
+<view class='btn'>配对成功后您将会拥有一个带有掘金能力的超萌马宝宝呦!</view>
+
+<button class='tijiao'>确认配对</button>

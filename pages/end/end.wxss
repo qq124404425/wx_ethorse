@@ -1,1 +1,80 @@
 /* pages/end/end.wxss */
+/*上面图片带介绍  */
+.header{
+  width: 100%;
+  height: 540rpx;
+  margin-top: 60rpx; 
+  position:relative;  
+}
+.left{
+  width: 324rpx;
+  height: 100%;
+  float: left;
+  margin-left: 35rpx;
+}
+.title{
+  width: 100%;
+  height: 56rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 56rpx;
+}
+.tu{
+  width: 328rpx;
+  height: 328rpx;
+  border-radius: 200rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+  background-color: pink;
+}
+.tu image{
+  width: 100%;
+  height: 100%;
+}
+.name{
+  width: 100%;
+  height: 30rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  font-size: 35rpx;
+  line-height: 30rpx;
+}
+.shuxing{
+    width: 100%;
+    height: 30rpx;
+    margin-top: 20rpx;
+    text-align: center;
+    color: #ccc;
+    font-size: 30rpx;
+    line-height: 30rpx;
+}
+.jia{
+ margin-right: 30rpx;
+}
+.xin image{
+  width: 120rpx;
+  height: 85rpx;
+  position: absolute;
+  left: 42%;
+  top: 37%;
+}
+/*配对介绍  */
+.btn{
+  width:704rpx;
+  height: 76rpx;
+  background-color: #f6f6f6;
+  text-align: center;
+  margin-top: 14rpx;
+  line-height: 76rpx;
+  color: #ccc;
+  margin: 14rpx auto;
+  font-size: 25rpx;
+  border-radius: 10rpx;
+}
+/*确认配对按钮  */
+.tijiao{
+  width: 40%;
+  margin-top: 58rpx;
+  background-color: #f88c9b;
+  color: white;
+}

@@ -70,13 +70,6 @@
 
 
 <!--提交按钮  -->
- <button class='peidui' type='warn'>立即配对</button> 
+ <view class='tijiao'><navigator url='../end/end'><button class='peidui' type='warn'>立即配对</button> </navigator></view>
 
-<!-- <view class='jieshao'>
 
-      <text class='text1'>大雕马 #9990</text>
-        <text class='text2'>代数: 0 代码</text>
-        <text class='text2'>纯度: 100%</text>
-        <text class='text2'>生育力: 是</text>  
-   
-</view> -->

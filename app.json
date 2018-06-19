@@ -1,8 +1,9 @@
 {
   "pages":[
-    "pages/end/end",
-    "pages/next/next",
+    
     "pages/index/index",
+    "pages/next/next",
+    "pages/end/end",
     "pages/logs/logs"
     
     
