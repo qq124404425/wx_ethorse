@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--pages/nuggets/nuggets.wxml-->
 <view class='header'>
   <view class='left'>
    <image src='../../images/header.png' mode='widthFix'></image>
@@ -13,17 +13,15 @@
 <!--按钮样式  -->
 
 <view class='btn'>
-  <navigator url='../index/index' class='select'>配对</navigator>
-  <navigator url='../nuggets/nuggets'>掘金</navigator>
+  <navigator url='../next/next'>配对</navigator>
+  <navigator url='../nuggets/nuggets' class='select'>掘金</navigator>
   <navigator url='../Assets/Assets'>我的资产</navigator>
 </view>
 
 
-
-
 <!--小马介绍  -->
-<navigator url='../next/next'>
-    <view class='nav' >
+<navigator url='../nuggets1/nuggets1' class='jinru'>
+  <view class='nav' >
   <!--左边  -->
   <view class='nav-left'>
       <image src='../../images/77.png'  class='supper'  mode='aspectFill' ></image>
@@ -32,23 +30,26 @@
   <!--右边  -->
   <view class='nav-right'>
     <view class='right-top'>
-         <image src='../../images/ma.gif' ></image> 
-        <text class='chaoren'>创世马</text>
+         <image src='../../images/juejin.png' ></image> 
+        <!-- <text class='chaoren'>创世马</text> -->
     </view>
     <view class='footer'>
         <view> <text class='tex1'>超人马 #17347</text></view>
-        <view> <text class='tex2'>代数: 0代码</text></view>
-        <view> <text class='tex3'>纯度: 100%</text></view>
-        <view><text class='tex4'>生育力: 是</text>   </view>
+        <view> <text class='tex2'>代数: 1代码</text></view>
+        <view> <text class='tex3'>掘金力: 30%</text></view>
+        <view><text class='tex4'>掘金速度: 一天</text></view>
     </view>
   </view>
 
 </view> 
+
 </navigator>
 
-<!--小马2  -->
-<navigator url='../next/next'>
-    <view class='nav' >
+ 
+
+<!--小马介绍2  -->
+<navigator url='../nuggets1/nuggets1' class='jinru'>
+  <view class='nav' >
   <!--左边  -->
   <view class='nav-left'>
       <image src='../../images/77.png'  class='supper'  mode='aspectFill' ></image>
@@ -57,17 +58,17 @@
   <!--右边  -->
   <view class='nav-right'>
     <view class='right-top'>
-         <image src='../../images/ma.gif' ></image> 
-        <text class='chaoren'>创世马</text>
+         <image src='../../images/juejin.png' ></image> 
+        <!-- <text class='chaoren'>创世马</text> -->
     </view>
     <view class='footer'>
         <view> <text class='tex1'>超人马 #17347</text></view>
-        <view> <text class='tex2'>代数: 0代码</text></view>
-        <view> <text class='tex3'>纯度: 100%</text></view>
-        <view><text class='tex4'>生育力: 是</text>   </view>
+        <view> <text class='tex2'>代数: 1代码</text></view>
+        <view> <text class='tex3'>掘金力: 30%</text></view>
+        <view><text class='tex4'>掘金速度: 一天</text></view>
     </view>
   </view>
 
 </view> 
-</navigator>
 
+</navigator>

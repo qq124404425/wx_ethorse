@@ -1,0 +1,41 @@
+
+<view class='header'>
+  <view class='left'>
+   <image src='../../images/header.png' mode='widthFix'></image>
+  </view>
+  <view class='right'>
+   
+    <text>以太马</text>
+  </view>
+</view>
+
+
+<!--按钮样式  -->
+
+<view class='btn'>
+  <navigator url='../index/index' >配对</navigator>
+  <navigator url='../nuggets/nuggets'>掘金</navigator>
+  <navigator url='' class='select'>我的资产</navigator>
+</view>
+
+
+<!--我邀请的人详细  -->
+<view class='zongti'>
+  <view class='my'>我的马客人: 66666666</view>
+  <view class='tody'>今日分享: 5次</view>
+  <view class='yaoqin'>我的邀请: 5人</view>
+ </view>
+
+ <!--按钮  -->
+ <button class='shouji' type='primary'>手机验证</button>
+
+
+ <view class='jiangli'>
+  <view class='title'>邀请奖励:</view>
+      <view class='haoyou'>
+        <view class='ren'>好友XXX掘金2.22马客,你获得0.22马客奖励</view>
+        <view class='ren'>好友XXX掘金2.22马客,你获得0.22马客奖励</view>
+      
+   
+      </view>
+ </view>

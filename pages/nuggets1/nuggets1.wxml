@@ -1,0 +1,77 @@
+<!--pages/nuggets1/nuggets1.wxml-->
+<!--头部 -->
+
+<!--中间部分  -->
+  <view class='waiyuan'>
+    <view class='nieyuan'> <image src='../../images/77.png'                    mode='aspectFill'></image></view>
+  </view>
+
+<!--介绍部分  -->
+<view class='tetle'>大雕马 #9990</view>
+ <view class='jieshao'>
+      <text class='text2'>代数: 1代码</text>
+      <text class='text2'>掘金力: 30%</text>
+      <text class='text2'>掘金速度: 一天</text>  
+ </view>  
+
+<!--特征  -->
+<view class='tezhneg'>特征</view>
+<view class='xiangxi'>
+  <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+  <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+  <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+    <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+   <view class='anniu'>
+    <view class='anniu_l'>
+      <image src='../../images/xin.gif'></image>
+    </view>
+     <view class='anniu_r'>斗鸡眼</view>
+  </view>
+  
+
+</view>
+
+
+<!--提交按钮  -->
+
+ <view class='tijiao'>
+      <button class='peidui' type='warn'>掘金</button>
+ </view>
