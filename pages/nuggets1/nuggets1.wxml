@@ -2,76 +2,59 @@
 <!--头部 -->
 
 <!--中间部分  -->
-  <view class='waiyuan'>
-    <view class='nieyuan'> <image src='../../images/77.png'                    mode='aspectFill'></image></view>
+<view class='waiyuan'>
+  <view class='nieyuan'>
+    <image src='../../images/{{blood}}.png' mode='aspectFill'></image>
   </view>
-
-<!--介绍部分  -->
-<view class='tetle'>大雕马 #9990</view>
- <view class='jieshao'>
-      <text class='text2'>代数: 1代码</text>
-      <text class='text2'>掘金力: 30%</text>
-      <text class='text2'>掘金速度: 一天</text>  
- </view>  
-
-<!--特征  -->
-<view class='tezhneg'>特征</view>
-<view class='xiangxi'>
-  <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-  <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-  <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-    <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
-  </view>
-  
-
 </view>
 
+<!--介绍部分  -->
+<view class='tetle'>掘金马 #{{id}}</view>
+<view class='jieshao'>
+  <text class='text2'>代数: 1代马</text>
+  <text class='text2'>掘金力: {{digrate}}%</text>
+  <text class='text2'>掘金速度: {{digspeed}}分钟</text>
+</view>
+
+<!--特征  -->
+<!-- <view class='tezhneg'>特征</view> -->
+<view class='xiangxi'>
+  <view class='anniu'>
+    <view class='anniu_r'>{{ear_name}}</view>
+  </view>
+  <view class='anniu'>
+    <view class='anniu_r'>{{eye_name}}</view>
+  </view>
+  <view class='anniu'>
+
+    <view class='anniu_r'>{{figure_name}}</view>
+  </view>
+  <view class='anniu'>
+
+    <view class='anniu_r'>{{hair_name}}</view>
+  </view>
+  <view class='anniu'>
+
+    <view class='anniu_r'>{{foot_name}}</view>
+  </view>
+  <view class='anniu'>
+
+    <view class='anniu_r'>{{mouth_name}}</view>
+  </view>
+  <view class='anniu'>
+
+    <view class='anniu_r'>{{nose_name}}</view>
+  </view>
+  <view class='anniu'>
+    <view class='anniu_r'>{{tail_name}}</view>
+  </view>
+</view>
 
 <!--提交按钮  -->
 
- <view class='tijiao'>
-      <button class='peidui' type='warn'>掘金</button>
- </view>
+<view class='tijiao' wx:if="{{isDig == 0}}">
+  <button class='peidui' type='warn' data-ponyid='{{id}}' bindtap='dig'>掘金</button>
+</view>
+<view class='digend' wx:if="{{isDig == 1}}">
+  结束时间：{{digend}}
+</view>

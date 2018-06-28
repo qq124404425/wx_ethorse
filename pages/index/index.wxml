@@ -1,73 +1,113 @@
 <!--index.wxml-->
 <view class='header'>
   <view class='left'>
-   <image src='../../images/header.png' mode='widthFix'></image>
+    <image src='../../images/header.png' mode='widthFix'></image>
   </view>
   <view class='right'>
-   
     <text>以太马</text>
   </view>
 </view>
+<button wx:if="{{!id && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="margin-top: 200rpx;"> 获取头像昵称 </button>
 
-
-<!--按钮样式  -->
-
-<view class='btn'>
-  <navigator url='../index/index' class='select'>配对</navigator>
-  <navigator url='../nuggets/nuggets'>掘金</navigator>
-  <navigator url='../Assets/Assets'>我的资产</navigator>
-</view>
-
-
-
-
-<!--小马介绍  -->
-<navigator url='../next/next'>
-    <view class='nav' >
-  <!--左边  -->
-  <view class='nav-left'>
-      <image src='../../images/77.png'  class='supper'  mode='aspectFill' ></image>
-       <image src='../../images/zuixin.gif' mode='top left' class='zuixin'></image>   
-  </view>
-  <!--右边  -->
-  <view class='nav-right'>
-    <view class='right-top'>
-         <image src='../../images/ma.gif' ></image> 
-        <text class='chaoren'>创世马</text>
-    </view>
-    <view class='footer'>
-        <view> <text class='tex1'>超人马 #17347</text></view>
-        <view> <text class='tex2'>代数: 0代码</text></view>
-        <view> <text class='tex3'>纯度: 100%</text></view>
-        <view><text class='tex4'>生育力: 是</text>   </view>
-    </view>
+<block wx:else>
+  <!--按钮样式  -->
+  <view class='btn'>
+    <text class='{{flag==1 ? "select" : ""}}' data-flag="1" bindtap='switchBtn'>配对</text>
+    <text class='{{flag==2 ? "select" : ""}}' data-flag="2" bindtap='switchBtn'>掘金</text>
+    <text class='{{flag==3 ? "select" : ""}}' data-flag="3" bindtap='switchBtn'>我的资产</text>
   </view>
 
-</view> 
-</navigator>
-
-<!--小马2  -->
-<navigator url='../next/next'>
-    <view class='nav' >
-  <!--左边  -->
-  <view class='nav-left'>
-      <image src='../../images/77.png'  class='supper'  mode='aspectFill' ></image>
-       <image src='../../images/zuixin.gif' mode='top left' class='zuixin'></image>   
+  <!-- 配对页面 -->
+  <view hidden='{{flag!=1 ? true : false}}' wx:for="{{zero_ponys}}" wx:key="idz">
+    <navigator url='../next/next?id={{item.id}}&blood={{item.blood}}&blood_name={{item.blood_name}}&blood_pure={{item.blood_pure}}&ear_name={{item.ear_name}}&eye_name={{item.eye_name}}&figure_name={{item.figure_name}}&foot_name={{item.foot_name}}&hair_name={{item.hair_name}}&mouth_name={{item.mouth_name}}&nose_name={{item.nose_name}}&skin_color={{item.skin_color}}&tail_name={{item.tail_name}}&isBreed={{item.isBreed}}&cooldown={{item.cooldown}}'>
+      <view class='nav'>
+        <!--左边  -->
+        <view class='nav-left'>
+          <image src='../../images/{{item.blood}}.png' class='supper' mode='aspectFill'></image>
+          <image src='../../images/icon_new.png' mode='top left' class='zuixin' wx:if="{{item.isNew}}"></image>
+        </view>
+        <!--右边  -->
+        <view class='nav-right'>
+          <view class='right-top'>
+            <image src='../../images/chuanshi.png'></image>
+            <text wx:if="{{item.isBreed == 1}}">冷却中</text>
+          </view>
+          <view class='footer'>
+            <view>
+              <text class='tex1'>{{item.blood_name}} #{{item.id}}</text>
+            </view>
+            <view>
+              <text class='tex2'>代数: 0代马</text>
+            </view>
+            <view>
+              <text class='tex3'>纯度: {{item.blood_pure}}%</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
   </view>
-  <!--右边  -->
-  <view class='nav-right'>
-    <view class='right-top'>
-         <image src='../../images/ma.gif' ></image> 
-        <text class='chaoren'>创世马</text>
-    </view>
-    <view class='footer'>
-        <view> <text class='tex1'>超人马 #17347</text></view>
-        <view> <text class='tex2'>代数: 0代码</text></view>
-        <view> <text class='tex3'>纯度: 100%</text></view>
-        <view><text class='tex4'>生育力: 是</text>   </view>
-    </view>
+  <!-- 掘金页面 -->
+  <view hidden='{{flag!=2 ? true : false}}' wx:for="{{dig_ponys}}" wx:key="idd">
+    <!--小马介绍  -->
+    <navigator url='../nuggets1/nuggets1?id={{item.id}}&blood={{item.blood}}&blood_name={{item.blood_name}}&blood_pure={{item.blood_pure}}&ear_name={{item.ear_name}}&eye_name={{item.eye_name}}&figure_name={{item.figure_name}}&foot_name={{item.foot_name}}&hair_name={{item.hair_name}}&mouth_name={{item.mouth_name}}&nose_name={{item.nose_name}}&skin_color={{item.skin_color}}&tail_name={{item.tail_name}}&digrate={{item.digrate}}&digspeed={{item.digspeed}}&isDig={{item.isDig}}&digend={{item.digend}}'
+      class='jinru'>
+      <view class='nav'>
+        <!--左边  -->
+        <view class='nav-left'>
+          <image src='../../images/{{item.blood}}.png' class='supper' mode='aspectFill'></image>
+          <image src='../../images/icon_new.png' mode='top left' class='zuixin' wx:if="{{item.isNew}}"></image>
+        </view>
+        <!--右边  -->
+        <view class='nav-right'>
+          <view class='right-top'>
+            <image src='../../images/juejin.png'></image>
+            <text wx:if="{{item.isDig == 1}}">掘金中</text>
+          </view>
+          <view class='footer'>
+            <view>
+              <text class='tex1'>掘金马 #{{item.id}}</text>
+            </view>
+            <view>
+              <text class='tex3'>掘金力: {{item.digrate}}%</text>
+            </view>
+            <view>
+              <text class='tex4'>掘金速度: {{item.digspeed}}分钟</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
   </view>
 
-</view> 
-</navigator>
+  <!-- 我的资产页面 -->
+  <view hidden='{{flag!=3 ? true : false}}'>
+    <!--我邀请的人详细  -->
+    <view class='zongti'>
+      <view class='my'>我的马客: {{ethi}}马客</view>
+      <view class='tody'>今日群分享: {{share}}次</view>
+      <view class='yaoqin'>我的邀请: {{invite}}人</view>
+    </view>
+    <!--按钮  -->
+    <button class='shouji' type='primary' bindtap='virify' wx:if="{{!virified}}">手机验证</button>
 
+    <view class='jiangli' wx:if="{{invite_detail != ''}}">
+      <view class='title'>邀请奖励:</view>
+      <scroll-view scroll-y="true" style="height: 250rpx">
+        <view class='haoyou' wx:for="{{invite_detail}}" wx:key="idi">
+          <view>{{item.create_time}}</view>
+          <view>{{item.wx_nickname}}掘金{{item.ethi_main_amount}}马客,您获得{{item.ethi_amount}}马客奖励</view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='jiangli' wx:if="{{dig_detail != ''}}">
+      <view class='title'>掘金奖励:</view>
+      <scroll-view scroll-y="true" style="height: 250rpx">
+        <view class='haoyou' wx:for="{{dig_detail}}" wx:key="idi">
+          <view>{{item.create_time}}</view>
+          <view>你获得{{item.ethi_amount}}马客奖励</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</block>

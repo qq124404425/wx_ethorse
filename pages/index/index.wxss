@@ -1,34 +1,40 @@
 /**index.wxss**/
+
 /*头部样式  */
-.header{
-width: 274rpx;
-height: 100rpx;
-margin-left: 243rpx;
-/* background-color: red; */
+
+.header {
+  width: 274rpx;
+  height: 100rpx;
+  margin-left: 243rpx;
+  /* background-color: red; */
 }
-.header .left{
+
+.header .left {
   width: 104rpx;
   height: 100%;
   float: left;
-
 }
-.header .left>image{
+
+.header .left>image {
   width: 100%;
   height: 100%;
 }
-.header .right{
+
+.header .right {
   float: left;
   width: 171rpx;
   height: 100%;
 }
-.header .right>text{
+
+.header .right>text {
   line-height: 100rpx;
-  margin-left: 30rpx; 
-   font: 0.75rem/1.3rem/微软雅黑;
+  margin-left: 30rpx;
+  font: 0.75rem/1.3rem/微软雅黑;
 }
 
 /*按钮样式  */
- .btn{
+
+.btn {
   margin-top: 60rpx;
   width: 100%;
   height: 70rpx;
@@ -37,101 +43,240 @@ margin-left: 243rpx;
   justify-content: space-around;
   text-align: center;
   line-height: 70rpx;
- 
-} 
-.btn navigator{
+}
+
+.btn text {
   width: 166rpx;
   height: 72rpx;
- 
 }
-.select{  
-   border: 1rpx solid blue;
+
+.select {
+  border: 1rpx solid blue;
   border-radius: 10rpx;
 }
- 
 
 /*小马介绍  */
-.nav{
+
+.nav {
   width: 708rpx;
   height: 302rpx;
   /* background-color: red; */
   margin-top: 60rpx;
   margin-left: 22rpx;
   /* border: 1rpx solid #ccc; */
- 
 }
-.nav .nav-left{
+
+.nav .nav-left {
   width: 332rpx;
   height: 302rpx;
   float: left;
-   background-color: #d1eeea; 
+  background-color: #d1eeea;
   border-top-left-radius: 20rpx;
   border-bottom-left-radius: 20rpx;
   position: relative;
 }
 
-.supper{
-position: absolute;
- /* left: -116rpx;
+.supper {
+  position: absolute;
+  /* left: -116rpx;
 top: -82rpx;  */
-width: 100%;
-height: 100%;
-border-top-left-radius: 20rpx;
-border-bottom-left-radius: 20rpx;
-
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
 }
-.zuixin{
+
+.zuixin {
   width: 130rpx;
   height: 130rpx;
   border-top-left-radius: 20rpx;
   position: absolute;
   left: 0;
   top: 0;
-
 }
-.nav .nav-right{
+
+.nav .nav-right {
   width: 375rpx;
   height: 100%;
-   background-color: #f6f6f6; 
+  background-color: #f6f6f6;
   float: left;
-   border-top-right-radius: 20rpx;
+  border-top-right-radius: 20rpx;
   border-bottom-right-radius: 20rpx;
-
 }
 
- .right-top{
-   /* width: 112rpx; */
-  /* height: 50;  */
-   /* background-color: red;  */
+.right-top {
+  /* width: 112rpx; *//* height: 50;  *//* background-color: red;  */
   margin-left: 18rpx;
   margin-top: 18rpx;
   position: relative;
-} 
-.right-top>image{
-   width: 80rpx;
-  height: 50rpx; 
 }
-.right-top>text{
+
+.right-top>image {
+  width: 140rpx;
+  height: 65rpx;
+}
+
+.right-top>text {
   font-size: 30rpx;
   text-align: center;
   /* background-color: red; */
-  color: red;
+  color: #b5b5b5;
   position: absolute;
-  left: 90rpx;
-  top: 4rpx;
-  
+  left: 225rpx;
+  top: 20rpx;
 }
-.footer{
+
+.footer {
   /* background-color: blue; */
   margin-top: 23rpx;
   margin-left: 16rpx;
 }
-.footer .tex1{
+
+.footer .tex1 {
   font-size: 40rpx;
-   font: 0.75rem/1.3rem/微软雅黑;
+  font: 0.75rem/1.3rem/微软雅黑;
 }
-.footer .tex2,.tex3,.tex4{
+
+.footer .tex2, .tex3, .tex4 {
   font-size: 30rpx;
   color: #969696;
 }
 
+/* 我邀请的人详细  */
+
+.zongti {
+  width: 706rpx;
+  height: 230rpx;
+  margin: 0 auto;
+  margin-top: 80rpx;
+}
+
+.zongti view {
+  width: 100%;
+  height: 76rpx;
+  line-height: 76rpx;
+}
+
+.zongti .my{
+  border-bottom: 1rpx solid #ccc;
+}
+
+.zongti .tody {
+  border-bottom: 1rpx solid #ccc;
+}
+
+.zongti .yaoqin {
+  border-bottom: 1rpx solid #ccc;
+}
+
+/*手机验证  */
+
+.shouji {
+  width: 40%;
+  margin-top: 55rpx;
+  margin-bottom: 48rpx;
+}
+
+/*奖励  */
+
+.jiangli {
+  width: 706rpx;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  height: 46rpx;
+}
+
+.haoyou {
+  font-size: 28rpx;
+  margin-top: 40rpx;
+  margin-left: 70rpx;
+}
+
+.show-btn {
+  margin-top: 100rpx;
+  color: #c7effa;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+}
+
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+.input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}

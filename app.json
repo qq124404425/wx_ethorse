@@ -7,14 +7,16 @@
     "pages/Assets/Assets",
     "pages/nuggets/nuggets",
     "pages/nuggets1/nuggets1",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/info/info"
     
     
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
   }
 }

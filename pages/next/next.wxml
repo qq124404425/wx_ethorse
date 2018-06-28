@@ -1,75 +1,56 @@
 <!--头部 -->
 
 <!--中间部分  -->
-  <view class='waiyuan'>
-    <view class='nieyuan'> <image src='../../images/77.png'                    mode='aspectFill'></image></view>
+<view class='waiyuan'>
+  <view class='nieyuan'>
+    <image src='../../images/{{blood}}.png' mode='aspectFill'></image>
   </view>
+</view>
 
 <!--介绍部分  -->
-<view class='tetle'>大雕马 #9990</view>
- <view class='jieshao'>
-      <text class='text2'>代数: 0 代码</text>
-      <text class='text2'>纯度: 100%</text>
-      <text class='text2'>生育力: 是</text>  
- </view>  
+<view class='tetle'>{{blood_name}} #{{id}}</view>
+<view class='jieshao'>
+  <text class='text2'>代数: 0 代马</text>
+  <text class='text2'>纯度: {{blood_pure}}%</text>
+  <text class='text2'>生育力: 是</text>
+</view>
 
 <!--特征  -->
-<view class='tezhneg'>特征</view>
+<!-- <view class='tezhneg'>特征</view> -->
 <view class='xiangxi'>
   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+    <view class='anniu_r'>{{ear_name}}</view>
   </view>
   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+    <view class='anniu_r'>{{eye_name}}</view>
   </view>
   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+    <view class='anniu_r'>{{figure_name}}</view>
   </view>
-    <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+  <view class='anniu'>
+    <view class='anniu_r'>{{foot_name}}</view>
   </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+  <view class='anniu'>
+    <view class='anniu_r'>{{hair_name}}</view>
   </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+  <view class='anniu'>
+    <view class='anniu_r'>{{mouth_name}}</view>
   </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+  <view class='anniu'>
+    <view class='anniu_r'>{{nose_name}}</view>
   </view>
-   <view class='anniu'>
-    <view class='anniu_l'>
-      <image src='../../images/xin.gif'></image>
-    </view>
-     <view class='anniu_r'>斗鸡眼</view>
+  <view class='anniu'>
+    <view class='anniu_r'>{{tail_name}}</view>
   </view>
-  
-
 </view>
 
 
 <!--提交按钮  -->
- <view class='tijiao'><navigator url='../end/end'><button class='peidui' type='warn'>立即配对</button> </navigator></view>
-
-
+<view class='tijiao' wx:if="{{isBreed == 0}}">
+  <navigator url='../end/end'>
+    <button class='peidui' type='warn'>立即配对</button>
+  </navigator>
+</view>
+<view class='breedend' wx:if="{{isBreed == 1}}">
+  冷却结束时间：{{cooldown}}
+</view>
