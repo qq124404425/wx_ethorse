@@ -12,9 +12,10 @@
 <block wx:else>
   <!--按钮样式  -->
   <view class='btn'>
-    <text class='{{flag==1 ? "select" : ""}}' data-flag="1" bindtap='switchBtn'>配对</text>
-    <text class='{{flag==2 ? "select" : ""}}' data-flag="2" bindtap='switchBtn'>掘金</text>
+    <text class='{{flag==1 ? "select" : ""}}' data-flag="1" bindtap='switchBtn'>我的马场</text>
+    <!-- <text class='{{flag==2 ? "select" : ""}}' data-flag="2" bindtap='switchBtn'>掘金</text> -->
     <text class='{{flag==3 ? "select" : ""}}' data-flag="3" bindtap='switchBtn'>我的资产</text>
+    <text class='{{flag==4 ? "select" : ""}}' data-flag="4" bindtap='switchBtn'>玩法攻略</text>
   </view>
 
   <!-- 配对页面 -->
@@ -48,7 +49,7 @@
     </navigator>
   </view>
   <!-- 掘金页面 -->
-  <view hidden='{{flag!=2 ? true : false}}' wx:for="{{dig_ponys}}" wx:key="idd">
+  <view hidden='{{flag!=1 ? true : false}}' wx:for="{{dig_ponys}}" wx:key="idd">
     <!--小马介绍  -->
     <navigator url='../nuggets1/nuggets1?id={{item.id}}&blood={{item.blood}}&blood_name={{item.blood_name}}&blood_pure={{item.blood_pure}}&ear_name={{item.ear_name}}&eye_name={{item.eye_name}}&figure_name={{item.figure_name}}&foot_name={{item.foot_name}}&hair_name={{item.hair_name}}&mouth_name={{item.mouth_name}}&nose_name={{item.nose_name}}&skin_color={{item.skin_color}}&tail_name={{item.tail_name}}&digrate={{item.digrate}}&digspeed={{item.digspeed}}&isDig={{item.isDig}}&digend={{item.digend}}'
       class='jinru'>

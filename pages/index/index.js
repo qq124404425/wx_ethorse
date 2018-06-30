@@ -79,7 +79,7 @@ Page({
     return {
       title: '以太马',
       desc: '区块链养成游戏',
-      path: '/pages/index/index?pid=' + wx.getStorageSync('id') + '&pUser=' + this.data.userInfo.nickName,
+      path: '/pages/index/index?pid=' + wx.getStorageSync('id'),
       success: (res) => {
         let shareTickets = res.shareTickets
         if (shareTickets != null) {
@@ -180,11 +180,11 @@ Page({
       withShareTicket: true
     })
     //是否通过推广链接进入
-    if (options.pUser != undefined) {
+    if (options.pid != undefined) {
       // wx.showToast({
-      //   title: '来自' + options.pUser + '的分享',
+      //   title: '来自' + options.pid + '的分享',
       //   icon: 'success',
-      //   duration: 3000
+      //   duration: 10000
       // })
       //邀请人id
       wx.setStorageSync('pid', options.pid)

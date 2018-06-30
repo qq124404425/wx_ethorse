@@ -32,10 +32,9 @@ App({
       }
     }
   },
-  onLaunch: function(options) {
+  onLaunch: function() {
     //检查用户的session是否过期，如果过期，需要重新获取
     if (wx.getStorageSync('session_key') == null) {}
-    
     wx.checkSession({
       success: function(res) {
         //session_key 未过期，并且在本生命周期一直有效
